@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09BF88032B6AF77F0055F851 /* ProjectsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF88022B6AF77F0055F851 /* ProjectsTableView.swift */; };
+		09BF88052B6AF7CF0055F851 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF88042B6AF7CF0055F851 /* ProjectView.swift */; };
+		09BF88072B6AF92F0055F851 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF88062B6AF92F0055F851 /* ProjectModel.swift */; };
+		09BF88092B6B0B410055F851 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF88082B6B0B410055F851 /* ProjectDetailView.swift */; };
 		09E84DB92B64ABA700E378CD /* GauravCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E84DB82B64ABA700E378CD /* GauravCardApp.swift */; };
 		09E84DBB2B64ABA700E378CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E84DBA2B64ABA700E378CD /* ContentView.swift */; };
 		09E84DBD2B64ABA900E378CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E84DBC2B64ABA900E378CD /* Assets.xcassets */; };
 		09E84DC02B64ABA900E378CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E84DBF2B64ABA900E378CD /* Preview Assets.xcassets */; };
+		09E84DCA2B64D78300E378CD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E84DC92B64D78300E378CD /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09BF88022B6AF77F0055F851 /* ProjectsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsTableView.swift; sourceTree = "<group>"; };
+		09BF88042B6AF7CF0055F851 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		09BF88062B6AF92F0055F851 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		09BF88082B6B0B410055F851 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		09E84DB52B64ABA700E378CD /* GauravCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GauravCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E84DB82B64ABA700E378CD /* GauravCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauravCardApp.swift; sourceTree = "<group>"; };
 		09E84DBA2B64ABA700E378CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09E84DBC2B64ABA900E378CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E84DBF2B64ABA900E378CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09E84DC72B64AEC200E378CD /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		09E84DC82B64B0DD00E378CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09E84DC92B64D78300E378CD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,15 @@
 		09E84DB72B64ABA700E378CD /* GauravCard */ = {
 			isa = PBXGroup;
 			children = (
+				09E84DC82B64B0DD00E378CD /* Info.plist */,
+				09E84DC62B64AEA600E378CD /* Fonts */,
 				09E84DB82B64ABA700E378CD /* GauravCardApp.swift */,
+				09BF88062B6AF92F0055F851 /* ProjectModel.swift */,
+				09BF88022B6AF77F0055F851 /* ProjectsTableView.swift */,
+				09BF88042B6AF7CF0055F851 /* ProjectView.swift */,
+				09BF88082B6B0B410055F851 /* ProjectDetailView.swift */,
 				09E84DBA2B64ABA700E378CD /* ContentView.swift */,
+				09E84DC92B64D78300E378CD /* InfoView.swift */,
 				09E84DBC2B64ABA900E378CD /* Assets.xcassets */,
 				09E84DBE2B64ABA900E378CD /* Preview Content */,
 			);
@@ -65,6 +84,14 @@
 				09E84DBF2B64ABA900E378CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09E84DC62B64AEA600E378CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09E84DC72B64AEC200E378CD /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E84DBB2B64ABA700E378CD /* ContentView.swift in Sources */,
+				09E84DCA2B64D78300E378CD /* InfoView.swift in Sources */,
+				09BF88052B6AF7CF0055F851 /* ProjectView.swift in Sources */,
 				09E84DB92B64ABA700E378CD /* GauravCardApp.swift in Sources */,
+				09BF88032B6AF77F0055F851 /* ProjectsTableView.swift in Sources */,
+				09BF88072B6AF92F0055F851 /* ProjectModel.swift in Sources */,
+				09BF88092B6B0B410055F851 /* ProjectDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GauravCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GauravCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GauravCard/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GauravCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
